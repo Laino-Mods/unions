@@ -1,0 +1,86 @@
+pop_faction_name_parts_list = {
+	key = "toplain_union_names"
+	parts = {
+		"Guild" = 1
+		"Union" = 1
+		"Labour Union" = 1
+		"Labour Guild" = 1
+		"Rights Movement" = 1
+	}
+}
+
+## Miners
+
+pop_faction_name_parts_list = {
+	key = "toplain_miner_union_names"
+	parts = {
+		"Miner" = 1
+		"Miner's" = 1
+		"Digger" = 1
+		"Digger's" = 1
+		"Mineworker" = 1
+		"Mineworker's" = 1
+	}
+}
+
+pop_faction_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 100
+			is_pop_faction_type = "toplain_miners"
+		}
+	}
+	format = "<toplain_miner_union_names> <toplain_union_names>"
+}
+
+## Farmers
+
+pop_faction_name_parts_list = {
+	key = "toplain_farmer_union_names"
+	parts = {
+		"Farmer" = 1
+		"Farmer's" = 1
+		"Field Worker" = 1
+		"Field Worker's" = 1
+		"Grower" = 1
+		"Grower's" = 1
+		"Farmhand" = 1
+		"Farmhand's" = 1
+	}
+}
+
+pop_faction_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 100
+			is_pop_faction_type = "toplain_farmers"
+		}
+	}
+	format = "<toplain_farmer_union_names> <toplain_union_names>"
+}
+
+## Technicians
+
+pop_faction_name_parts_list = {
+	key = "toplain_technician_union_names"
+	parts = {
+		"Technician" = 1
+		"Technician's" = 1
+		"Electrician" = 1
+		"Electrician's" = 1
+	}
+}
+
+pop_faction_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 100
+			is_pop_faction_type = "toplain_technicians"
+		}
+	}
+	format = "<toplain_technician_union_names> <toplain_union_names>"
+
+}

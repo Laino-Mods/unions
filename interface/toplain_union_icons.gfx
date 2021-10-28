@@ -1,0 +1,21 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_faction_icon_toplain_farmers"
+		textureFile = "interface/icons/faction_icons/toplain_farmers.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_faction_icon_toplain_miners"
+		textureFile = "interface/icons/faction_icons/toplain_miners.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_faction_icon_toplain_technicians"
+		textureFile = "interface/icons/faction_icons/toplain_technicians.dds"
+		noOfFrames = 1
+	}
+
+}

@@ -1,0 +1,68 @@
+
+##############################
+# Branch offices
+##############################
+
+toplain_unions_faction_branch_offices_update = {
+	remove_pop_faction_flag species_mixing
+	remove_pop_faction_flag no_priests
+	remove_pop_faction_flag has_robots
+
+	owner = {
+		every_owned_planet = {
+			if = {
+				limit = { has_planet_flag = toplain_unions_$FACTION_JOB$s_branch_office }
+
+				if = {
+					limit = { toplain_unions_species_mixing = yes }
+					prevprev = {
+						set_pop_faction_flag species_mixing
+					}
+				}
+				
+                if = {
+					limit = { toplain_unions_has_priests = no }
+					prevprev = {
+						set_pop_faction_flag no_priests
+					}
+				}
+                
+                if = {
+					limit = { toplain_unions_has_robots = yes }
+					prevprev = {
+						set_pop_faction_flag has_robots
+					}
+				}
+
+				if = {
+					limit = { 
+						prevprev = { faction_approval < 0.4 }
+					}
+
+					remove_modifier = toplain_unions_$FACTION_JOB$s_branch_office_pleased
+					remove_modifier = toplain_unions_$FACTION_JOB$s_branch_office
+					toplain_unions_add_modifier_if_not_exists = { MODIFIER = toplain_unions_$FACTION_JOB$s_branch_office_displeased }
+				}
+				else_if = {
+					limit = { 
+						prevprev = { faction_approval < 0.6 }
+					}
+
+					remove_modifier = toplain_unions_$FACTION_JOB$s_branch_office_displeased
+					remove_modifier = toplain_unions_$FACTION_JOB$s_branch_office_pleased
+					toplain_unions_add_modifier_if_not_exists = { MODIFIER = toplain_unions_$FACTION_JOB$s_branch_office }
+				}
+				else = {
+					remove_modifier = toplain_unions_$FACTION_JOB$s_branch_office_displeased
+					remove_modifier = toplain_unions_$FACTION_JOB$s_branch_office
+					toplain_unions_add_modifier_if_not_exists = { MODIFIER = toplain_unions_$FACTION_JOB$s_branch_office_pleased }
+				}
+			}
+			else = {
+				remove_modifier = toplain_unions_$FACTION_JOB$s_branch_office_displeased
+				remove_modifier = toplain_unions_$FACTION_JOB$s_branch_office_pleased
+				remove_modifier = toplain_unions_$FACTION_JOB$s_branch_office
+			}
+		}
+	}
+}

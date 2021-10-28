@@ -1,0 +1,18 @@
+[h1]License[/h1]
+
+[url=http://creativecommons.org/licenses/by/4.0/][img]https://i.creativecommons.org/l/by/4.0/88x31.png[/img][/url]
+
+This work is licensed under a [url=http://creativecommons.org/licenses/by/4.0/]Creative Commons Attribution 4.0 International License[/url].
+
+[h2]Attributions[/h2]
+
+Work - Author - Source - License - Notes
+
+Pickaxe icon - Arthur Shlain - https://commons.wikimedia.org/wiki/File:Pickaxe_icon_(white).svg - Creative Commons Attribution 3.0 Unported - Changes made
+Plug-in icon - Florian Huber - https://commons.wikimedia.org/wiki/File:Plug-in_Noun_project_4032.svg - Creative Commons Attribution 3.0 Unported - Changes made
+Wheat icon - Douglas Santos - https://commons.wikimedia.org/wiki/File:Noun_189679_cc.svg - Creative Commons Attribution 3.0 Unported - Changes made
+
+[h2]Licenses[/h2]
+
+Creative Commons Attribution 3.0 Unported - https://creativecommons.org/licenses/by/3.0/deed.en
+Creative Commons Attribution 4.0 International License - http://creativecommons.org/licenses/by/4.0/

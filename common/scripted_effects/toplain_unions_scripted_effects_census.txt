@@ -1,0 +1,174 @@
+
+##############################
+# Census
+##############################
+
+toplain_unions_faction_census = {
+	toplain_unions_faction_remove_flags = { }
+	toplain_unions_faction_ethics_update = { }
+	toplain_unions_faction_branch_offices = { FACTION_JOB = $FACTION_JOB$ }
+
+	set_pop_faction_flag = census_happened
+
+	toplain_unions_faction_branch_offices_update = { FACTION_JOB = $FACTION_JOB$ }
+}
+
+toplain_unions_faction_branch_offices = {
+	owner = {
+		every_owned_planet = {
+			if = {
+				limit = { has_planet_flag = toplain_unions_$FACTION_JOB$s_branch_office }
+
+				if = {
+					limit = {
+						count_owned_pop = {
+							count < @toplain_unions_branch_office_remove_pops
+							limit = { member_of_faction = toplain_$FACTION_JOB$s }
+						}
+					}
+
+					remove_planet_flag = toplain_unions_$FACTION_JOB$s_branch_office
+				}
+			}
+			else_if = {
+				limit = {
+					count_owned_pop = {
+						count >= @toplain_unions_branch_office_create_pops
+						limit = { member_of_faction = toplain_$FACTION_JOB$s }
+					}
+				}
+
+				set_planet_flag = toplain_unions_$FACTION_JOB$s_branch_office
+			}
+
+			if = {
+				limit = { has_planet_flag = toplain_unions_$FACTION_JOB$s_branch_office }
+				prevprev = {
+					set_pop_faction_flag = has_branch_office
+				}
+			}
+		}
+	}
+}
+
+toplain_unions_faction_ethics_update = {
+	if = {
+		set_pop_faction_flag = ethic_spiritualist
+		limit = {
+			count_owned_pop = {
+				limit = {
+					OR = {
+						has_ethic = ethic_spiritualist
+						has_ethic = ethic_fanatic_spiritualist
+					}
+				}
+				count >= @toplain_unions_ethic_min_pops
+			}
+		}
+    }
+	
+	if = {
+		set_pop_faction_flag = ethic_materialist
+		limit = {
+			count_owned_pop = {
+				limit = {
+					OR = {
+						has_ethic = ethic_materialist
+						has_ethic = ethic_fanatic_materialist
+					}
+				}
+				count >= @toplain_unions_ethic_min_pops
+			}
+		}
+    }
+	
+	if = {
+		set_pop_faction_flag = ethic_militarist
+		limit = {
+			count_owned_pop = {
+				limit = {
+					OR = {
+						has_ethic = ethic_militarist
+						has_ethic = ethic_fanatic_militarist
+					}
+				}
+				count >= @toplain_unions_ethic_min_pops
+			}
+		}
+    }
+	
+	if = {
+		set_pop_faction_flag = ethic_pacifist
+		limit = {
+			count_owned_pop = {
+				limit = {
+					OR = {
+						has_ethic = ethic_pacifist
+						has_ethic = ethic_fanatic_pacifist
+					}
+				}
+				count >= @toplain_unions_ethic_min_pops
+			}
+		}
+    }
+	
+	if = {
+		set_pop_faction_flag = ethic_xenophobe
+		limit = {
+			count_owned_pop = {
+				limit = {
+					OR = {
+						has_ethic = ethic_xenophobe
+						has_ethic = ethic_fanatic_xenophobe
+					}
+				}
+				count >= @toplain_unions_ethic_min_pops
+			}
+		}
+    }
+	
+	if = {
+		set_pop_faction_flag = ethic_xenophile
+		limit = {
+			count_owned_pop = {
+				limit = {
+					OR = {
+						has_ethic = ethic_xenophile
+						has_ethic = ethic_fanatic_xenophile
+					}
+				}
+				count >= @toplain_unions_ethic_min_pops
+			}
+		}
+    }
+	
+	if = {
+		set_pop_faction_flag = ethic_egalitarian
+		limit = {
+			count_owned_pop = {
+				limit = {
+					OR = {
+						has_ethic = ethic_egalitarian
+						has_ethic = ethic_fanatic_egalitarian
+					}
+				}
+				count >= @toplain_unions_ethic_min_pops
+			}
+		}
+    }
+	
+	if = {
+		set_pop_faction_flag = ethic_authoritarian
+		limit = {
+			count_owned_pop = {
+				limit = {
+					OR = {
+						has_ethic = ethic_authoritarian
+						has_ethic = ethic_fanatic_authoritarian
+					}
+				}
+				count >= @toplain_unions_ethic_min_pops
+			}
+		}
+    }
+}

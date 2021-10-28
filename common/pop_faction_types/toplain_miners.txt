@@ -1,0 +1,186 @@
+##############################
+# Miner's Union
+##############################
+
+toplain_miners = {
+	election_header = "GFX_faction_header_brown"
+	#guiding_ethic = ethic_egalitarian
+
+	unique = yes
+	support_multiplier = 0
+	
+	is_potential = {
+		NOT = { has_ethic = ethic_gestalt_consciousness }
+		NOT = { has_country_flag = suppress_vanilla_factions }
+        
+		count_owned_pop = {
+			limit = {
+                OR = {
+                    has_job = miner
+                    has_job = crystal_miner
+                    has_job = gas_extractor
+                    has_job = mote_harvester
+                }
+			}
+			count >= @toplain_unions_min_pops
+		}
+	}
+
+	can_join_pre_triggers = {
+		is_enslaved = no
+		is_being_purged = no
+	}
+
+	can_join_faction = {
+        OR = {
+            has_job = miner
+            has_job = crystal_miner
+            has_job = gas_extractor
+            has_job = mote_harvester
+        }
+		is_shackled_robot = no
+		NOT = { has_trait = trait_nerve_stapled }
+	}
+
+	attraction = {
+		base = @toplain_unions_base_attraction
+
+		modifier = {
+			factor = 0.8
+			happiness > 40
+			happiness < 60
+		}
+		
+		modifier = {
+			factor = 0.7
+			happiness >= 60
+		}
+	}
+
+	leader = { base = 0 }
+
+	on_create = { toplain_unions_faction_on_create = { FACTION_JOB = miner } }
+	
+	on_destroy = { toplain_unions_faction_on_destroy = { FACTION_JOB = miner } }
+
+
+	demand = {
+		title = "TOPLAIN_UNION_DIVIDED"
+		unfulfilled_title = "TOPLAIN_UNION_UNIFIED"
+		desc = "TOPLAIN_UNION_DIVIDED_DESC"
+
+		fulfilled_effect = @toplain_unions_demand_divided_approval
+		unfulfilled_effect = @toplain_unions_demand_divided_disproval
+		
+		potential = { toplain_unions_demand_divided_potential = yes }
+		trigger = { toplain_unions_demand_divided_trigger = yes }
+	}
+	
+	demand = {
+		title = "TOPLAIN_UNION_GOOD_WORKING_CONDITIONS"
+		unfulfilled_title = "TOPLAIN_UNION_BAD_WORKING_CONDITIONS"
+		desc = "TOPLAIN_UNION_GOOD_WORKING_CONDITIONS_DESC"
+
+		fulfilled_effect = @toplain_unions_demand_good_working_conditions_approval
+		unfulfilled_effect = @toplain_unions_demand_good_working_conditions_disproval
+		
+		potential = { toplain_unions_demand_good_working_conditions_potential = yes }
+		trigger = { toplain_unions_demand_good_working_conditions_trigger = yes }
+	}
+    
+	demand = {
+		title = "TOPLAIN_UNION_PRIESTS"
+		unfulfilled_title = "TOPLAIN_UNION_NO_PRIESTS"
+		desc = "TOPLAIN_UNION_PRIESTS_DESC"
+
+		fulfilled_effect = @toplain_unions_demand_priests_approval
+		unfulfilled_effect = @toplain_unions_demand_priests_disproval
+
+		potential = { toplain_unions_demand_priests_potential = yes }
+		trigger = { toplain_unions_demand_priests_trigger = yes }
+	}
+	
+	demand = {
+		title = "TOPLAIN_UNION_NO_ROBOTS"
+		unfulfilled_title = "TOPLAIN_UNION_ROBOTS"
+		desc = "TOPLAIN_UNION_NO_ROBOTS_DESC"
+
+		fulfilled_effect = @toplain_unions_demand_no_robots_approval
+		unfulfilled_effect = @toplain_unions_demand_no_robots_disproval
+
+		potential = { toplain_unions_demand_no_robots_potential = yes }
+		trigger = { toplain_unions_demand_no_robots_trigger = yes }
+	}
+	
+	demand = {
+		title = "TOPLAIN_UNION_ROBOTS"
+		unfulfilled_title = "TOPLAIN_UNION_NO_ROBOTS"
+		desc = "TOPLAIN_UNION_ROBOTS_DESC"
+
+		fulfilled_effect = @toplain_unions_demand_robots_approval
+		unfulfilled_effect = @toplain_unions_demand_robots_disproval
+
+		potential = { toplain_unions_demand_robots_potential = yes }
+		trigger = { toplain_unions_demand_robots_trigger = yes }
+	}
+	
+	demand = {
+		title = "TOPLAIN_UNION_GOOD_LIVING_STANDARDS"
+		unfulfilled_title = "TOPLAIN_UNION_BAD_LIVING_STANDARDS"
+		desc = "TOPLAIN_UNION_GOOD_LIVING_STANDARDS_DESC"
+
+		fulfilled_effect = @toplain_unions_demand_good_living_standards_approval
+		unfulfilled_effect = @toplain_unions_demand_good_living_standards_disproval
+		
+		potential = { toplain_unions_demand_good_living_standards_potential = yes }
+		trigger = { toplain_unions_demand_good_living_standards_trigger = yes }
+	}
+	
+	demand = {
+		title = "TOPLAIN_UNION_FOREIGN_GOODS"
+		unfulfilled_title = "TOPLAIN_UNION_NO_FOREIGN_GOODS"
+		desc = "TOPLAIN_UNION_FOREIGN_GOODS_DESC"
+
+		fulfilled_effect = @toplain_unions_demand_foreign_goods_approval
+		unfulfilled_effect = @toplain_unions_demand_foreign_goods_disproval
+		
+		potential = { toplain_unions_demand_foreign_goods_potential = yes }
+		trigger = { toplain_unions_demand_foreign_goods_trigger = yes }
+	}
+	
+	demand = {
+		title = "TOPLAIN_UNION_NO_SPECIES_MIXING"
+		unfulfilled_title = "TOPLAIN_UNION_SPECIES_MIXING"
+		desc = "TOPLAIN_UNION_NO_SPECIES_MIXING_DESC"
+
+		fulfilled_effect = @toplain_unions_demand_no_species_mixing_approval
+		unfulfilled_effect = @toplain_unions_demand_no_species_mixing_disproval
+
+		potential = { toplain_unions_demand_no_species_mixing_potential = yes }
+		trigger = { toplain_unions_demand_no_species_mixing_trigger = yes }
+	}	
+	
+	demand = {
+		title = "TOPLAIN_UNION_WAR_ECONOMY"
+		unfulfilled_title = "TOPLAIN_UNION_NO_WAR_ECONOMY"
+		desc = "TOPLAIN_UNION_WAR_ECONOMY_DESC"
+
+		fulfilled_effect = @toplain_unions_demand_war_economy_approval
+		unfulfilled_effect = @toplain_unions_demand_war_economy_disproval
+
+		potential = { toplain_unions_demand_war_economy_potential = yes }
+		trigger = { toplain_unions_demand_war_economy_trigger = yes }
+	}	
+	
+	demand = {
+		title = "TOPLAIN_UNION_DEFENSIVE_WARS"
+		unfulfilled_title = "TOPLAIN_UNION_NO_DEFENSIVE_WARS"
+		desc = "TOPLAIN_UNION_DEFENSIVE_WARS_DESC"
+
+		fulfilled_effect = @toplain_unions_demand_defensive_wars_approval
+		unfulfilled_effect = @toplain_unions_demand_defensive_wars_disproval
+
+		potential = { toplain_unions_demand_defensive_wars_potential = yes }
+		trigger = { toplain_unions_demand_defensive_wars_trigger = yes }
+	}	
+}

@@ -1,0 +1,38 @@
+
+##############################
+# Factions
+##############################
+
+# Faction created
+
+toplain_unions_faction_on_create = {
+	toplain_unions_faction_census = { FACTION_JOB = $FACTION_JOB$ }
+}
+
+# Faction destroyed
+
+toplain_unions_faction_on_destroy = {
+	toplain_unions_faction_remove_flags = { }
+
+	every_owned_planet = {
+		remove_planet_flag = toplain_unions_$FACTION_JOB$s_branch_office
+		remove_modifier = toplain_unions_$FACTION_JOB$s_branch_office_displeased
+		remove_modifier = toplain_unions_$FACTION_JOB$s_branch_office_pleased
+		remove_modifier = toplain_unions_$FACTION_JOB$s_branch_office
+	}
+}
+
+# Remove all flags
+
+toplain_unions_faction_remove_flags = {
+	remove_pop_faction_flag = census_happened
+	remove_pop_faction_flag = has_branch_office
+	remove_pop_faction_flag = ethic_spiritualist
+	remove_pop_faction_flag = ethic_materialist
+	remove_pop_faction_flag = ethic_militarist
+	remove_pop_faction_flag = ethic_pacifist
+	remove_pop_faction_flag = ethic_xenophobe
+	remove_pop_faction_flag = ethic_xenophile
+	remove_pop_faction_flag = ethic_authoritarian
+	remove_pop_faction_flag = ethic_egalitarian
+}

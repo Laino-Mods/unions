@@ -1,0 +1,25 @@
+[b]WORK IN PROGRESS[/b]
+
+[h1]Preface[/h1]
+
+Is Stellaris too easy and the AI too weak, but do you hate just giving the AI a bunch of free stuff, by playing on a higher difficulty than Ensign?
+
+This might be the mod for you.
+
+I believe one of reasons the AI is weak in Stellaris is that it likes to build more-or-less balanced planets, while players prefer to build very specialized planets - which is a completely overpowered strategy.
+
+This mod severely nerfs that playstyle without making it impossible.
+
+[h1]Description[/h1]
+
+This mod adds new factions for various pop professions, such as a "Miner's Union".
+
+Additionally, having a lot of pops of one type on a planet will give them considerable political power - and they will use it. You will now have to either meet their demands and expend resources to keep them happy, or ignore them and take a hit to resource production and stability.
+
+As soon as there are a certain number of (unhappy) worker pops in your empire, they will start forming union factions. Additionally, once there are a certain number of such pops on a planet, unions will open a branch office there.
+
+Any branch office will slightly reduce resource production but give you additional jobs. Unhappy unions will considerably reduce stability and resource production.
+
+[h1]Compatibility[/h1]
+
+This mod doesn't overwrite any file, so it should be compatible with everything.

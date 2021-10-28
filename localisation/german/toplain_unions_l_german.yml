@@ -1,0 +1,74 @@
+﻿l_german:
+ 
+ pft_toplain_miners: "Miner's Labour Union"
+ pft_toplain_miners_desc: "A union of lower stratum workers."
+
+ toplain_unions_miners_branch_office: "Miner's Union Branch Office - Malcontent"
+ toplain_unions_miners_branch_office_desc: "A miner's union has opened a branch office for their members.\n\nThey are a nuisance because the union is malcontent."
+ 
+ toplain_unions_miners_branch_office_pleased: "Miner's Union Branch Office - Pleased"
+ toplain_unions_miners_branch_office_pleased_desc: "A miner's union has opened a branch office for their members.\n\nThey are currently pleased and are enforcing decent working conditions."
+ 
+ toplain_unions_miners_branch_office_displeased: "Miner's Union Branch Office - Strikes"
+ toplain_unions_miners_branch_office_displeased_desc: "A miner's union has opened a branch office for their members.\n\nThey are organizing strikes because the union is extremely displeased."
+ 
+ pft_toplain_farmers: "Farmer's Labour Union"
+ pft_toplain_farmers_desc: "A union of lower stratum workers."
+ 
+ toplain_unions_farmers_branch_office: "Farmer's Union Branch Office - Malcontent"
+ toplain_unions_farmers_branch_office_desc: "A farmer's union has opened a branch office for their members.\n\nThey are a nuisance because the union is malcontent."
+ 
+ toplain_unions_farmers_branch_office_pleased: "Farmer's Union Branch Office - Pleased"
+ toplain_unions_farmers_branch_office_pleased_desc: "A farmer's union has opened a branch office for their members.\n\nThey are currently pleased and are enforcing decent working conditions."
+ 
+ toplain_unions_farmers_branch_office_displeased: "Farmer's Union Branch Office - Strikes"
+ toplain_unions_farmers_branch_office_displeased_desc: "A farmer's union has opened a branch office for their members.\n\nThey are organizing strikes because the union is extremely displeased."
+ 
+ pft_toplain_technicians: "Technician's Labour Union"
+ pft_toplain_technicians_desc: "A union of lower stratum workers."
+ 
+ toplain_unions_technicians_branch_office: "Technician's Union Branch Office - Malcontent"
+ toplain_unions_technicians_branch_office_desc: "A technician's union has opened a branch office for their members.\n\nThey are a nuisance because the union is malcontent."
+ 
+ toplain_unions_technicians_branch_office_pleased: "Technician's Union Branch Office - Pleased"
+ toplain_unions_technicians_branch_office_pleased_desc: "A technician's union has opened a branch office for their members.\n\nThey are currently pleased and are enforcing decent working conditions."
+ 
+ toplain_unions_technicians_branch_office_displeased: "Technician's Union Branch Office - Strikes"
+ toplain_unions_technicians_branch_office_displeased_desc: "A technician's union has opened a branch office for their members.\n\nThey are organizing strikes because the union is extremely displeased."
+ 
+ TOPLAIN_UNION_DIVIDED: "Labour Union - Divided"
+ TOPLAIN_UNION_UNIFIED: "Labour Union - Unified"
+ TOPLAIN_UNION_DIVIDED_DESC: "\"Sometimes it can be hard to agree on anything.\"\n\nUnions with a broad range of ethics will be easier to please."
+ 
+ TOPLAIN_UNION_GOOD_WORKING_CONDITIONS: "Good Working Conditions"
+ TOPLAIN_UNION_BAD_WORKING_CONDITIONS: "Bad Working Conditions"
+ TOPLAIN_UNION_GOOD_WORKING_CONDITIONS_DESC: "\"Overtime? What do you mean 'work overtime'?\"\n\nBad working conditions such as extended shifts will displease this faction."
+ 
+ TOPLAIN_UNION_PRIESTS: "Priests"
+ TOPLAIN_UNION_NO_PRIESTS: "No Priests"
+ TOPLAIN_UNION_NO_PRIESTS_DESC: "\"Our members have spiritual needs.\"\n\nPlanets with branch offices of this faction must have priests."
+
+ TOPLAIN_UNION_ROBOTS: "Robots Allowed"
+ TOPLAIN_UNION_NO_ROBOTS: "No Robots"
+ TOPLAIN_UNION_NO_ROBOTS_DESC: "\"No soulless machines!\"\n\nPlanets with branch offices of this faction must not have robots."
+ TOPLAIN_UNION_ROBOTS_DESC: "\"Machines to lessen our workload.\"\n\nAllowing robotic workers will please this faction."
+
+ TOPLAIN_UNION_GOOD_LIVING_STANDARDS: "Good Living Standards"
+ TOPLAIN_UNION_BAD_LIVING_STANDARDS: "Bad Living Standards"
+ TOPLAIN_UNION_GOOD_LIVING_STANDARDS_DESC: "\"Honest pay for honest work!\"\n\nPops of this faction must not have stratified or basic subsistence living standards."
+ 
+ TOPLAIN_UNION_FOREIGN_GOODS: "Foreign Goods"
+ TOPLAIN_UNION_NO_FOREIGN_GOODS: "No Foreign Goods"
+ TOPLAIN_UNION_FOREIGN_GOODS_DESC: "\"We want access to xeno goods.\"\n\nWe must have at least 2 commercial pacts."
+
+ TOPLAIN_UNION_SPECIES_MIXING: "Working with Xenos"
+ TOPLAIN_UNION_NO_SPECIES_MIXING: "Not working with Xenos"
+ TOPLAIN_UNION_NO_SPECIES_MIXING_DESC: "\"To each their own.\"\n\nPlanets with branch offices of this faction must not have multiple non-robot species."
+
+ TOPLAIN_UNION_WAR_ECONOMY: "War Economy"
+ TOPLAIN_UNION_NO_WAR_ECONOMY: "No War Economy"
+ TOPLAIN_UNION_WAR_ECONOMY_DESC: "\"Work to strengthen our military.\"\n\nWe must have a militarized economy."
+ 
+ TOPLAIN_UNION_DEFENSIVE_WARS: "Defensive Wars"
+ TOPLAIN_UNION_NO_DEFENSIVE_WARS: "No Defensive Wars"
+ TOPLAIN_UNION_DEFENSIVE_WARS_DESC: "\"We will not labour for an aggressor.\"\n\nWe must have the defensive wars only doctrine." 

@@ -1,0 +1,12 @@
+##############################
+# Utils
+##############################
+
+# Only adds the modifier if it doesn't already exist
+toplain_unions_add_modifier_if_not_exists = {
+	if = {
+		limit = { NOT = { has_modifier = $MODIFIER$ } }
+
+		add_modifier = { modifier = $MODIFIER$ days = -1}
+	}
+}

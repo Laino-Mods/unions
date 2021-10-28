@@ -1,0 +1,106 @@
+
+##############################
+# Values
+##############################
+
+# Base attraction of unions
+@toplain_unions_base_attraction = 300
+
+##############################
+# Conditions
+##############################
+
+# Minimum pops in the appropriate job to have an union faction
+@toplain_unions_ethic_min_pops = 5
+
+# Minimum pops in the appropriate job to have an union faction
+@toplain_unions_min_pops = 12
+
+# Minimum pops in the union on a planet to spawn a branch office
+@toplain_unions_branch_office_create_pops = 12
+
+# Minimum pops in the union on a planet to have a branch office
+@toplain_unions_branch_office_remove_pops = 8
+
+##############################
+# Modifiers
+##############################
+
+# How many bonus jobs does a branch office add
+@toplain_unions_bonus_jobs = 2
+
+# Pleased union modifiers
+@toplain_unions_pleased_produces = -0.1
+@toplain_unions_pleased_stability = 0
+
+# Malcontent union modifiers
+@toplain_unions_produces = -0.2
+@toplain_unions_stability = -10
+
+# Striking union modifiers
+@toplain_unions_displeased_produces = -0.5
+@toplain_unions_displeased_stability = -30
+
+##############################
+# Demands
+##############################
+
+#### Divided Union
+# Requirements: Always
+@toplain_unions_demand_divided_approval = 5
+@toplain_unions_demand_divided_disproval = 0
+
+#### Good Working Conditions
+# Requirements: Always
+@toplain_unions_demand_good_working_conditions_approval = 10
+@toplain_unions_demand_good_working_conditions_disproval = -20
+
+##### Spiritualist <---> Materialist
+
+#### No Robots
+# Requirements: Spiritualist, not Materialist
+@toplain_unions_demand_no_robots_approval = 10
+@toplain_unions_demand_no_robots_disproval = -20
+
+#### Priests
+# Requirements: Spiritualist
+@toplain_unions_demand_priests_approval = 10
+@toplain_unions_demand_priests_disproval = -20
+
+#### Good Living Standards
+# Requirements: Materialist
+@toplain_unions_demand_good_living_standards_approval = 10
+@toplain_unions_demand_good_living_standards_disproval = -20
+
+#### Robots
+# Requirements: Materialist, not Spiritualist
+@toplain_unions_demand_robots_approval = 10
+@toplain_unions_demand_robots_disproval = -20
+
+##### Militarist <---> Pacifist
+
+#### War Economy
+# Requirements: Militarist, not Pacifist
+@toplain_unions_demand_war_economy_approval = 10
+@toplain_unions_demand_war_economy_disproval = -20
+
+#### Defensive Wars
+# Requirements: Pacifist, not Militarist
+@toplain_unions_demand_defensive_wars_approval = 10
+@toplain_unions_demand_defensive_wars_disproval = -20
+
+##### Xenophobe <---> Xenophile
+
+#### No Species Mixing
+# Requirements: Xenophobe, not Xenophile
+@toplain_unions_demand_no_species_mixing_approval = 10
+@toplain_unions_demand_no_species_mixing_disproval = -20
+
+#### Foreign Goods
+# Requirements: Materialist, Xenophile, not Xenophobe
+@toplain_unions_demand_foreign_goods_min_pacts = 2
+@toplain_unions_demand_foreign_goods_approval = 10
+@toplain_unions_demand_foreign_goods_disproval = -20
+
+##### Authoritarian <---> Egalitarian
+# Makes no sense to do anything on this axis

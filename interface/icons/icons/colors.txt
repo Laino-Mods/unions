@@ -1,0 +1,3 @@
+miners 963232
+farmers 2c7a29
+technicians c4be35

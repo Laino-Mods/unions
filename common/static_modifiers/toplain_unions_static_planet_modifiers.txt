@@ -1,0 +1,72 @@
+
+toplain_unions_farmers_branch_office_pleased = {
+    icon = "interface/icons/modifier_icons/toplain_farmers.dds"
+    icon_frame = 1
+    job_farmer_add = @toplain_unions_bonus_jobs
+    planet_stability_add = @toplain_unions_pleased_stability
+    planet_farmers_food_produces_mult = @toplain_unions_pleased_produces
+}
+
+toplain_unions_miners_branch_office_pleased = {
+    icon = "interface/icons/modifier_icons/toplain_miners.dds"
+    icon_frame = 1
+    job_miner_add = @toplain_unions_bonus_jobs
+    planet_stability_add = @toplain_unions_pleased_stability
+    planet_miners_minerals_produces_mult = @toplain_unions_pleased_produces
+}
+
+toplain_unions_technicians_branch_office_pleased = {
+    icon = "interface/icons/modifier_icons/toplain_technicians.dds"
+    icon_frame = 1
+    job_technician_add = @toplain_unions_bonus_jobs
+    planet_stability_add = @toplain_unions_pleased_stability
+    planet_technician_energy_produces_mult = @toplain_unions_pleased_produces
+}
+
+toplain_unions_farmers_branch_office = {
+    icon = "interface/icons/modifier_icons/toplain_farmers.dds"
+    icon_frame = 2
+    planet_stability_add = @toplain_unions_stability
+    job_farmer_add = @toplain_unions_bonus_jobs
+    planet_farmers_food_produces_mult = @toplain_unions_produces
+}
+
+toplain_unions_miners_branch_office = {
+    icon = "interface/icons/modifier_icons/toplain_miners.dds"
+    icon_frame = 2
+    planet_stability_add = @toplain_unions_stability
+    job_miner_add = @toplain_unions_bonus_jobs
+    planet_miners_minerals_produces_mult = @toplain_unions_produces
+}
+
+toplain_unions_technicians_branch_office = {
+    icon = "interface/icons/modifier_icons/toplain_technicians.dds"
+    icon_frame = 2
+    planet_stability_add = @toplain_unions_stability
+    job_technician_add = @toplain_unions_bonus_jobs
+    planet_technician_energy_produces_mult = @toplain_unions_produces
+}
+
+toplain_unions_farmers_branch_office_displeased = {
+    icon = "interface/icons/modifier_icons/toplain_farmers.dds"
+    icon_frame = 3
+    planet_stability_add = @toplain_unions_displeased_stability
+    job_farmer_add = @toplain_unions_bonus_jobs
+    planet_farmers_food_produces_mult = @toplain_unions_displeased_produces
+}
+
+toplain_unions_miners_branch_office_displeased = {
+    icon = "interface/icons/modifier_icons/toplain_miners.dds"
+    icon_frame = 3
+    planet_stability_add = @toplain_unions_displeased_stability
+    job_miner_add = @toplain_unions_bonus_jobs
+    planet_miners_minerals_produces_mult = @toplain_unions_displeased_produces
+}
+
+toplain_unions_technicians_branch_office_displeased = {
+    icon = "interface/icons/modifier_icons/toplain_technicians.dds"
+    icon_frame = 3
+    planet_stability_add = @toplain_unions_displeased_stability
+    job_technician_add = @toplain_unions_bonus_jobs
+    planet_technician_energy_produces_mult = @toplain_unions_displeased_produces
+}

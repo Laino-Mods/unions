@@ -1,0 +1,180 @@
+
+##############################
+# Demands
+##############################
+
+#### Divided
+
+toplain_unions_demand_divided_potential = {
+    always = yes
+}
+
+toplain_unions_demand_divided_trigger = {
+    OR = {
+        AND = {
+            has_pop_faction_flag = ethic_spiritualist
+            has_pop_faction_flag = ethic_materialist
+        }
+        AND = {
+            has_pop_faction_flag = ethic_egalitarian
+            has_pop_faction_flag = ethic_authoritarian
+        }
+        AND = {
+            has_pop_faction_flag = ethic_xenophobe
+            has_pop_faction_flag = ethic_xenophile
+        }
+        AND = {
+            has_pop_faction_flag = ethic_militarist
+            has_pop_faction_flag = ethic_pacifist
+        }
+    }
+}
+
+#### Good Working Conditions
+
+toplain_unions_demand_good_working_conditions_potential = {
+    exists = owner
+}
+
+toplain_unions_demand_good_working_conditions_trigger = {
+    NOR = {
+        owner = { has_edict = extended_shifts }
+    }
+}
+
+#### Priests
+
+toplain_unions_demand_priests_potential = {
+    exists = owner
+
+    has_pop_faction_flag = ethic_spiritualist
+}
+
+toplain_unions_demand_priests_trigger = {
+    NOR = {
+        has_pop_faction_flag = no_priests
+    }
+}
+
+#### No Robots
+
+toplain_unions_demand_no_robots_potential = {
+    exists = owner
+
+    has_pop_faction_flag = ethic_spiritualist
+
+    NOR = {
+        has_pop_faction_flag = ethic_materialist
+    }
+}
+
+toplain_unions_demand_no_robots_trigger = {
+    NOR = {
+        has_pop_faction_flag = has_robots
+    }
+}
+
+#### Robots
+
+toplain_unions_demand_robots_potential = {
+    exists = owner
+
+    has_pop_faction_flag = ethic_materialist
+
+    NOR = {
+        has_pop_faction_flag = ethic_spiritualist
+    }
+}
+
+toplain_unions_demand_robots_trigger = {
+    owner = {
+        has_policy_flag = robots_allowed
+    }
+}
+
+#### Good Living Standards
+
+toplain_unions_demand_good_living_standards_potential = {
+    exists = owner
+
+    has_pop_faction_flag = ethic_materialist
+}
+
+toplain_unions_demand_good_living_standards_trigger = {
+    NOR = {
+        any_owned_pop = {
+            OR = {
+                has_living_standard = { type = living_standard_stratified }
+                has_living_standard = { type = living_standard_subsistence }
+            }
+        }
+    }
+}
+
+#### Foreign Goods
+
+toplain_unions_demand_foreign_goods_potential = {
+    exists = owner
+
+    has_pop_faction_flag = ethic_materialist
+    has_pop_faction_flag = ethic_xenophile
+    
+    NOR = {
+        has_pop_faction_flag = ethic_xenophobe
+    }
+}
+
+toplain_unions_demand_foreign_goods_trigger = {
+    owner = {
+        num_commercial_pacts >= @toplain_unions_demand_foreign_goods_min_pacts
+    }
+}
+
+#### No Species Mixing
+
+toplain_unions_demand_no_species_mixing_potential = {
+    has_pop_faction_flag = has_branch_office
+    has_pop_faction_flag = ethic_xenophobe
+
+    NOR = {
+        has_pop_faction_flag = ethic_xenophile
+    }
+}
+
+toplain_unions_demand_no_species_mixing_trigger = {
+    NOT = {
+        has_pop_faction_flag = species_mixing
+    }
+}
+
+#### War Economy
+
+toplain_unions_demand_war_economy_potential = {
+    has_pop_faction_flag = ethic_militarist
+    
+    NOT = {
+        has_pop_faction_flag = ethic_pacifist
+    }
+}
+
+toplain_unions_demand_war_economy_trigger = {
+    owner = {
+        has_policy_flag = economic_policy_military
+    }
+}
+
+#### Defensive Wars
+
+toplain_unions_demand_defensive_wars_potential = {
+    has_pop_faction_flag = ethic_pacifist
+    
+    NOT = {
+        has_pop_faction_flag = ethic_militarist
+    }
+}
+
+toplain_unions_demand_defensive_wars_trigger = {
+    owner = {
+        has_policy_flag = no_wars
+    }
+}

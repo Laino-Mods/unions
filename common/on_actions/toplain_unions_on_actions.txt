@@ -1,0 +1,11 @@
+on_yearly_pulse_country = {
+	events = {
+		toplain_unions.1
+	}
+}
+
+on_monthly_pulse_country = {
+	events = {
+		toplain_unions.2
+	}
+}
